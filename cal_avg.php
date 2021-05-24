@@ -25,7 +25,16 @@ $nume5 = $_POST['nume5'];
         <input type="submit" value="Cal Average"><br><br>
         </form>
         <?php
-        
+        if(isset($num1)){
+            $sum = ($num1+$num2+$num3+$num4+$num5);
+            $avg = $sum/5;
+            echo "<h3>คำนวณค่าเฉลี่ย</h3>";
+            echo "ค่าเฉลี่ย =".$avg."<br>";
+            echo "(ผลรวม =".$sum.")<br>";
+        } // End isset
+        else {
+            echo "ไม่มีข้อมูล"ว
+        }
 
         ?>
     </body>
